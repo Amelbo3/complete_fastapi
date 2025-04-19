@@ -26,5 +26,4 @@ def read_email(email):
 
         mes_donnees = {"nom": "", "prenom": "", "dob": "", "city": "", "phone": ""}
     
-
     return mes_donnees
