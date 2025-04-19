@@ -2,9 +2,7 @@ name: Deploiement de FastAPI App
 
 on:
   push:
-    jobs:
-      build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout code
-            uses: actions/checkout@v2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
