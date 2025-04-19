@@ -17,11 +17,11 @@ jobs:
     steps:
       - name: Configure Actions/Workflow
         uses: actions/checkout@v4
-
-      - name: Install Docker app/tool
-        become: True
-        run: |
-          dnf -y install docker
+        
+      #- name: Install Docker app/tool
+      #  become: True
+      #  run: |
+      #    dnf -y install docker
 
       - name: Login to Docker Hub
         uses: docker/login-action@v1
