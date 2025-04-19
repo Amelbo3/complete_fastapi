@@ -1,8 +1,9 @@
-name: Deploiement de FastAPI App
-
+name: Deploiement de Notre App FastAPI
 on:
   push:
+    branches: [ main ]
+jobs:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
