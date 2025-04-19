@@ -18,10 +18,10 @@ jobs:
       - name: Configure Actions/Workflow
         uses: actions/checkout@v4
 
-      #- name: Install Docker app/tool
-      #  become: True
-      #  run: |
-      #    dnf -y install docker
+      - name: Imprime les valeurs
+        run: |
+          echo '${{ secrets.DOCKERHUB_USERNAME }}'
+          echo '${{ secrets.DOCKERHUB_TOKEN }}'
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
