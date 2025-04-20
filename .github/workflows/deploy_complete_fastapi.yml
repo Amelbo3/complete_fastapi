@@ -9,7 +9,7 @@ env:
   SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
   SERVER_USER: ${{ vars.SERVER_USERNAME }}
   SERVER_HOST: ${{ vars.SERVER_IP}}
-  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-demo
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-demo-2
 
 jobs:
   check-bats-version:
