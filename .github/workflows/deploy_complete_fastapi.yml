@@ -34,7 +34,7 @@ jobs:
         run: |
           docker build -t ${{ env.IMAGE_NAME }}:latest .
           docker push ${{ env.IMAGE_NAME }}:latest
-
+comment: >
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.0
         with:
@@ -48,3 +48,4 @@ jobs:
           docker rm fastapi-app || true
           docker run -d --name fastapi-app -p 8000:80 ${{ env.IMAGE_NAME }}:latest
           EOF
+comment: >
